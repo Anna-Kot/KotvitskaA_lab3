@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<link href="var3.css" rel="stylesheet" type="text/css">
+	<link href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css" rel="stylesheet">
+</head>
+
+<body>
+	<div class="main-menu">
+		<header id="id_header">
+			<div class="LOGO"> SHPPNG </div>
+
+			<nav class="main-nav">
+				<label>
+					<input type="radio" name="radio" hidden> <p> Shopping Bag ► </p>
+				</label>
+				<label>
+					<input type="radio" name="radio" hidden> <p> Checkout ► </p>
+				</label>
+				<label>
+					<input type="radio" name="radio" hidden> <p> Confirmation </p>
+				</label>
+			</nav>
+			<div class="buy">
+				<i class="fa fa-shopping-cart"></i>
+				<span class="buy-style">1</span>
+			</div>
+		</header>
+
+		<main>
+			<article class="main-column -left">
+				<form class="personal">
+					<h1>Personal Information</h1>
+					<div class="containerForm">
+						<div class="form-column -left">
+							<h6>First Name</h6>
+							<input type="text" name="FirstName" placeholder="Anna" size="18">
+						</div>
+						<div class="form-column -right">
+							<h6>Last Name</h6>
+							<input type="text" name="LastName" placeholder="Kotvitska" size="18">
+						</div>
+					</div>
+					<div class="containerForm">
+						<h6>Email Adress</h6>
+						<input type="text" name="EmailAdress" placeholder="annakot97@gmail.com" size="18">
+					</div>
+					<div class="containerForm">
+						<h6>Street</h6>
+						<input type="text" name="Street" placeholder="25, Seletska" size="18">
+					</div>
+					<div class="containerForm">
+						<div class="form-column -left">
+							<h6>City</h6>
+							<input type="text" name="City" placeholder="Zhytomyr" size="18">
+						</div>
+						<div class="form-column -right">
+							<h6>Country</h6>
+							<input list="Country" placeholder="Ukrain" size="18">
+							<datalist id="Country">
+								<option value="France">France</option>
+								<option value="Ukrain">Ukrain</option>
+								<option value="Germany">Germany</option>
+								<option value="Poland">Poland</option>
+								<option value="Italy">Italy</option>
+								<option value="England">England</option>
+							</datalist>
+						</div>
+					</div>
+					<div class="containerForm">
+						<h6>Phone number</h6>
+						<div class="phoneForm">
+							<input class="CountryCode" type="text" maxlength="3" pattern="[0-9]{1,2}" placeholder="+33">
+							<input class="Number" type="text" maxlength="10" pattern="[0-9]{6,10}">
+						</div>
+					</div>
+				</form>
+			</article>
+
+			<article class="main-column -right">
+				<form class="delivery">
+					<h1>Delivery</h1>
+					<h6>Delivery fee</h6>
+					<div class="form-pay">
+						<input id="1" type="radio" name="delivery" hidden>
+						<label for="1" class="form-column -left">
+							<p class="fee">0<span>$</span></p>
+							<p class="comment">3-4weeks </p>
+						</label>
+
+						<input id="2" type="radio" name="delivery" hidden checked>
+						<label for="2" class="form-column -right">
+							<p class="fee">5<span>$</span></p>
+							<p class="comment">2-5 days </p>
+						</label>
+					</div>
+					<p> Estimated delivery date: <b>August 4th.</b><br>
+						Every package has a tracking number. </p>
+				</form>
+
+				<div class="choose-options">
+					<label>
+						<input type="checkbox" checked>
+						<p>Subscribe to our newsletter</p>
+					</label>
+					<label>
+						<input type="checkbox">
+						<p>Create an account
+					</label>
+				</div>
+				<button>Confirm my order</button>
+			</article>
+		</main>
+	</div>
+</body>
+</html>
